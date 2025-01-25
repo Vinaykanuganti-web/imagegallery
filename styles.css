@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+.container{
+    position: relative;
+    min-height: 100vh;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: rgb(255, 0, 0);
+}
+.container .search-box{
+    position: relative;
+    height: 42px;
+    max-width: 400px;
+    background-color: gold;
+    margin: 0 auto;
+    border-radius: 50px;
+    margin-bottom: 40px;
+}
+.search-box input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 0 50px 0 50px;
+    border-radius:50px ;
+}
+.search-box i{
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 15px;
+    font-size: 20px;
+    transform: translate(-50%); 
+}
+.container .images .image-box{
+    position: relative;
+    height: 300px;
+    width: 210px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.images{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.images .image-box{
+    margin: 8px;
+}
+.images .image-box img{
+    height: 100%;
+    width: 100%;
+    border-radius:6px; 
+    transition: transform 0.2s linear;
+
+}
+.image-box:hover{
+    transform: scale(1.05);
+
+}
+.image-box h6{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: beige;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
